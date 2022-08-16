@@ -371,7 +371,7 @@
           </address>
         </div>
         <div class="footer-soc">
-          <b class="title exhortation">Приєднуйтесь</b>
+          <strong class="title exhortation">Приєднуйтесь</strong>
           <ul class="list soc">
             <li class="soc-item">
               <a href="" class="soc-link link footer-soc-link">
@@ -403,6 +403,25 @@
             </li>
           </ul>
         </div>
+        <form class="form subscribe" action="#">
+          <strong class="title exhortation">Підпишіться на розсилку</strong>
+          <div class="form-subscribe">
+            <label for="user_email"></label>
+            <input
+              class="input-email"
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button subscribe-button">
+              Підписатися
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 
@@ -413,6 +432,45 @@
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="form form-modal" action="#">
+          <b>Залиште свої дані, ми вам передзвонимо</b>
+          <div class="form-field">
+            <label for="user-name">Ім'я</label>
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder=""
+              autofocus
+            />
+          </div>
+          <div class="form-field">
+            <label for="name">Телефон</label>
+            <input type="tel" name="tel" id="tel" placeholder="" />
+          </div>
+          <div class="form-field">
+            <label for="email">Пошта</label>
+            <input type="email" name="email" id="email" placeholder="" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Коментар</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              rows="5"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="form-field">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="" class="link policy-link">Умови договору</a>
+            </label>
+          </div>
+          <button type="submit" class="button form-button">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
