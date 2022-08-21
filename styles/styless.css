@@ -798,7 +798,7 @@ a {
   font-size: 20px;
   line-height: 1.15;
   color: #212121;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .form-field {
@@ -846,7 +846,7 @@ a {
 }
 .modal-svg {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 
 .modal-icon-input {
